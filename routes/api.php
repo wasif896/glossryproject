@@ -23,4 +23,4 @@ Route::post('list',[UserController::class,'add']);
     });
 
 
-Route::post('login',[UserController::class,'index']);
+Route::post('login',[UserController::class,'index'])->middleware('cors');
